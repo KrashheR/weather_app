@@ -1,0 +1,25 @@
+.weather {
+  position: relative;
+  max-width: 410px;
+  height: 105px;
+  background: $weather-bg;
+  padding: 28px 32px;
+  overflow: hidden;
+  border-radius: 18px;
+  font-family: 'Roboto', sans-serif;
+  transition: 0.6s ease-out;
+
+  &__today-info{
+    margin: 15px 0;
+  }
+
+  &__details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px;
+    padding-top: 20px;
+    gap: 2rem;
+    scale: 0;
+    opacity: 0;
+  }
+}

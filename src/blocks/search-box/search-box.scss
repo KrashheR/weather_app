@@ -1,0 +1,45 @@
+.search-box{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__input{
+    color: $color-main;
+    width: 80%;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-left: 40px;
+
+    &::placeholder {
+      font-size: 20px;
+      font-weight: 500;
+      color: $color-main;
+      text-transform: capitalize;
+    }
+  }
+  
+  &__button{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: $color-main;
+    background: $button-color;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: 0.4s ease;
+
+    &:hover{
+      color: $button-color-hover;
+      background: $color-main;
+    }
+  }
+  
+  &__marker{
+    position: absolute;
+    color: $color-main;
+    font-size: 28px;
+  }
+}
+

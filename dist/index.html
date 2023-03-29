@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="video-bg">
+    <video class="video-bg__content" src="" autoplay muted loop playsinline></video>
+    <div class="video-bg__overlay"></div>
+  </div>
+  <header>
+  </header>
+  <main>
+    <div class="weather">
+      <div class="weather__search-box search-box">
+        <i class="search-box__marker fa-solid fa-location-dot"></i>
+        <input class="search-box__input" type="text" placeholder="Введите город">
+        <button class="search-box__button fa-solid fa-magnifying-glass"></button>
+      </div>
+      <div class="weather__today-info today-info">
+        <image class="today-info__image" src="" alt="Текущая погода"></image>
+        <p class="today-info__temperature"></p>
+        <p class="today-info__description"></p>
+      </div>
+      <div class="weather__details">
+        <div class="indicator indicator_feels-like">
+          <i class="indicator__icon fa-solid fa-temperature-half"></i>
+          <div class="indicator__container">
+            <span class="indicator__value"></span>
+            <p class="indicator__description">Ощущается</p>
+          </div>
+        </div>
+        <div class="indicator indicator_humidity indicator_right">
+          <i class="indicator__icon fa-solid fa-water"></i>
+          <div class="indicator__container">
+            <span class="indicator__value"></span>
+            <p class="indicator__description">Влажность</p>
+          </div>
+        </div>
+        <div class="indicator indicator_pressure">
+          <i class="indicator__icon fa-solid fa-arrow-down-short-wide"></i>
+          <div class="indicator__container">
+            <span class="indicator__value"></span>
+            <p class="indicator__description">Давление</p>
+          </div>
+        </div>
+        <div class="indicator indicator_wind indicator_right">
+          <i class="indicator__icon fa-solid fa-wind"></i>
+          <div class="indicator__container">
+            <span class="indicator__value"></span>
+            <p class="indicator__description">Скорость Ветра</p>
+          </div>
+        </div>
+      </div>
+      <div class="weather__not-found not-found">
+        <img class="not-found__image" src="images/404.webp" alt="Неверный город">
+        <p class="not-found__description">Ошибка! Указан некорректный город :(</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+
+
+
+  <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+  <script src="js/index.min.js"></script>
+</body>
+</html>

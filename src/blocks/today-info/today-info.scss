@@ -1,0 +1,23 @@
+.today-info{
+  text-align: center;
+  scale: 0;
+  opacity: 0;
+
+  &__image {
+    width: 120px;
+  }
+
+  &__temperature{
+    position: relative;
+    color: $color-main;
+    font-size: 4rem;
+    font-weight: 800;
+  }
+
+  &__description{
+    color: $color-main;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+}
