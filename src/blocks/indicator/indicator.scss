@@ -16,6 +16,9 @@
     color: $color-main;
     font-size: 16px;
     font-weight: 500;
+    @media (max-width: $screen-mobile) {
+      white-space: inherit;
+    }
   }
   
   &__description{

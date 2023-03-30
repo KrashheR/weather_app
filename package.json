@@ -1,7 +1,7 @@
 {
-    "name": "crypto",
+    "name": "weather-app",
     "version": "1.0.0",
-    "description": "new gulp website",
+    "description": "my weather-app",
     "author": "Nikita Kucherenko",
     "devDependencies": {
         "browser-sync": "^2.27.11",

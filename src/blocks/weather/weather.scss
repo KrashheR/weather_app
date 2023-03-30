@@ -8,6 +8,10 @@
   border-radius: 18px;
   font-family: 'Roboto', sans-serif;
   transition: 0.6s ease-out;
+  
+  @media (max-width: $screen-mobile) {
+    max-width: 320px;
+  }
 
   &__today-info{
     margin: 15px 0;
@@ -21,5 +25,10 @@
     gap: 2rem;
     scale: 0;
     opacity: 0;
+
+    @media (max-width: $screen-mobile) {
+      margin: 0;
+      gap: 1.5rem;
+    }
   }
 }
