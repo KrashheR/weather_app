@@ -11,10 +11,17 @@
   
   @media (max-width: $screen-mobile) {
     max-width: 320px;
+    max-height: 390px;
+    padding: 15px;
+    height: 70px;
   }
 
   &__today-info{
     margin: 15px 0;
+
+    @media (max-width: $screen-mobile) {
+      margin: 0;
+    }
   }
 
   &__details{
@@ -27,7 +34,6 @@
     opacity: 0;
 
     @media (max-width: $screen-mobile) {
-      margin: 0;
       gap: 1.5rem;
     }
   }
