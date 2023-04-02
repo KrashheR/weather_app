@@ -34,11 +34,11 @@ function setWeatherDetails(json) {
   const pressure = document.querySelector('.indicator_pressure .indicator__value');
   const feelsLike = document.querySelector('.indicator_feels-like .indicator__value');
 
-  temperature.innerHTML = `${Number(json.main.temp)}<span>°C</span>`;
+  temperature.innerHTML = `${parseInt(json.main.temp, 10)}<span>°C</span>`;
   description.innerHTML = `${json.weather[0].description}`;
-  feelsLike.innerHTML = `${Number(json.main.feels_like)}<span>°C</span>`;
+  feelsLike.innerHTML = `${parseInt(json.main.feels_like, 10)}<span>°C</span>`;
   humidity.innerHTML = `${json.main.humidity}%`;
-  wind.innerHTML = `${Number(json.wind.speed)} Km/h`;
+  wind.innerHTML = `${parseInt(json.wind.speed, 10)} Km/h`;
   pressure.innerHTML = `${json.main.pressure} мм рт.ст.`;
 }
 

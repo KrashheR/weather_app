@@ -1,19 +1,19 @@
 .not-found{
+  display: none;
   width: 100%;
   text-align: center;
   margin-top: 50px;
   scale: 0;
   opacity: 0;
-  display: none;
 
   &__image{
     width: 70%;
   }
 
   &__description{
+    margin-top: 12px;
     color: $color-main;
     font-size: 22px;
     font-weight: 500;
-    margin-top: 12px;
   }
 }
